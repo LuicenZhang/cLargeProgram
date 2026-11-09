@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 #include <stdio.h>
@@ -9,7 +9,7 @@
 int main(int argc, char** argv) {
 	char cho0;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		mainMenu();
 		cho0 = getchar();    getchar();
 		if (cho0 == '0') break;

@@ -1,5 +1,5 @@
-//cProgrammSys.cpp
-//×öÒ»¸öÍ¼ĞÎ»¯½çÃæ
+ï»¿//cProgrammSys.cpp
+//åšä¸€ä¸ªå›¾å½¢åŒ–ç•Œé¢
 
 #include <iostream>
 #include <stdio.h>
@@ -10,17 +10,17 @@ void lines_m(int);
 void colum_n(int);
 
 void mainMenu(void) {
-	local(4, 20);  printf("C±à³ÌÑİÊ¾ÏµÍ³\n");
-	local(1, 24);  printf("1. C»ù±¾Êı¾İ\n");
-	colum_n(24);  printf("2. Ë³Ğò½á¹¹\n");
-	colum_n(24);  printf("3. ·ÖÖ¦½á¹¹\n");
-	colum_n(24);  printf("4. Ñ­»·½á¹¹\n");
-	colum_n(24);  printf("5. º¯Êı½á¹¹\n");
-	colum_n(24);  printf("6. Êı×é½á¹¹\n");
-	colum_n(24);  printf("7. Ö¸Õë½á¹¹\n");
+	local(4, 20);  printf("Cç¼–ç¨‹æ¼”ç¤ºç³»ç»Ÿ\n");
+	local(1, 24);  printf("1. CåŸºæœ¬æ•°æ®\n");
+	colum_n(24);  printf("2. é¡ºåºç»“æ„\n");
+	colum_n(24);  printf("3. åˆ†æç»“æ„\n");
+	colum_n(24);  printf("4. å¾ªç¯ç»“æ„\n");
+	colum_n(24);  printf("5. å‡½æ•°ç»“æ„\n");
+	colum_n(24);  printf("6. æ•°ç»„ç»“æ„\n");
+	colum_n(24);  printf("7. æŒ‡é’ˆç»“æ„\n");
 
-	local(2, 24);  printf("0. ½áÊø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 24);  printf("0. ç»“æŸ\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 void local(int m, int n) {
 	for (int i = 0; i < m; i++)  printf("\n");
@@ -33,28 +33,28 @@ void colum_n(int n) {
 	for (int i = 0; i < n; i++)  printf(" ");
 }
 //=============================
-//2.1·ÖÖ§µÄÒ»¼¶²Ëµ¥
+//2.1åˆ†æ”¯çš„ä¸€çº§èœå•
 void dispMenu2_1(void) {
-	local(2, 20);  printf("C»ù±¾Êı¾İ¹¦ÄÜ\n");
-	local(1, 24);  printf("1. Êı¾İ·ÖÀà\n");
-	colum_n(24);  printf("2. È¡Öµ·¶Î§\n");
-	colum_n(24);  printf("3. ´æ´¢×Ö½Ú\n");
-	colum_n(24);  printf("4. ËãÊõËã·û\n");
-	colum_n(24);  printf("5. ÀàĞÍ×ª»»\n");
-	colum_n(24);  printf("6. I/OÀàĞÍ¿ØÖÆ\n");
-	colum_n(24);  printf("7. printf()º¯Êı\n");
-	colum_n(24);  printf("8. scanf()º¯Êı\n");
-	colum_n(24);  printf("9. ×Ö·ûI/O\n");
+	local(2, 20);  printf("CåŸºæœ¬æ•°æ®åŠŸèƒ½\n");
+	local(1, 24);  printf("1. æ•°æ®åˆ†ç±»\n");
+	colum_n(24);  printf("2. å–å€¼èŒƒå›´\n");
+	colum_n(24);  printf("3. å­˜å‚¨å­—èŠ‚\n");
+	colum_n(24);  printf("4. ç®—æœ¯ç®—ç¬¦\n");
+	colum_n(24);  printf("5. ç±»å‹è½¬æ¢\n");
+	colum_n(24);  printf("6. I/Oç±»å‹æ§åˆ¶\n");
+	colum_n(24);  printf("7. printf()å‡½æ•°\n");
+	colum_n(24);  printf("8. scanf()å‡½æ•°\n");
+	colum_n(24);  printf("9. å­—ç¬¦I/O\n");
 
-	local(2, 24);  printf("0. ·µ»Ø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 24);  printf("0. è¿”å›\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 #include "menu2_1.h" 
-//2.1·ÖÖ§µÄ¶ş¼¶²Ëµ¥
+//2.1åˆ†æ”¯çš„äºŒçº§èœå•
 void menu2_1(void) {
 	char cho2_1;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		dispMenu2_1();
 		cho2_1 = getchar();     getchar();//??
 		if (cho2_1 == '0') break;
@@ -76,24 +76,24 @@ void menu2_1(void) {
 	}
 }
 //================================ 
-//2.2·ÖÖ§µÄÒ»¼¶²Ëµ¥
+//2.2åˆ†æ”¯çš„ä¸€çº§èœå•
 void dispMenu2_2(void) {
-	local(2, 20);  printf("CË³Ğò½á¹¹±à³Ì\n");
-	local(1, 24);  printf("1. ³ÌĞò½á¹¹\n");
-	colum_n(24);  printf("2. Óï¾äÓë¸´ºÏ\n");
-	colum_n(24);  printf("3. ASCllÂë\n");
-	colum_n(24);  printf("4. ÖÜ³¤ÓëÃæ»ı\n");
-	colum_n(24);  printf("5. Êä³öÍ¼°¸\n");
+	local(2, 20);  printf("Cé¡ºåºç»“æ„ç¼–ç¨‹\n");
+	local(1, 24);  printf("1. ç¨‹åºç»“æ„\n");
+	colum_n(24);  printf("2. è¯­å¥ä¸å¤åˆ\n");
+	colum_n(24);  printf("3. ASCllç \n");
+	colum_n(24);  printf("4. å‘¨é•¿ä¸é¢ç§¯\n");
+	colum_n(24);  printf("5. è¾“å‡ºå›¾æ¡ˆ\n");
 
-	local(2, 24);  printf("0. ·µ»Ø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 24);  printf("0. è¿”å›\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 #include "menu2_2.h"
-//2.2·ÖÖ§µÄ¶ş¼¶²Ëµ¥
+//2.2åˆ†æ”¯çš„äºŒçº§èœå•
 void menu2_2(void) {
 	char cho2_2;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		dispMenu2_2();
 		cho2_2 = getchar();     getchar();//??
 		if (cho2_2 == '0') break;
@@ -110,26 +110,26 @@ void menu2_2(void) {
 	}
 }
 //================================
-//2.3·ÖÖ§µÄÒ»¼¶²Ëµ¥
+//2.3åˆ†æ”¯çš„ä¸€çº§èœå•
 void dispMenu2_3(void) {
-	local(2, 20);  printf("C·ÖÖ¦½á¹¹±à³Ì\n");
-	local(1, 24);  printf("1. ifÓï¾ä\n");
-	colum_n(24);  printf("2. if-elseÓï¾ä\n");
-	colum_n(24);  printf("3. if-else ifÓï¾ä\n");
-	colum_n(24);  printf("4. switchÓï¾ä\n");
-	colum_n(24);  printf("5. gotoÓï¾ä\n");
-	colum_n(24);  printf("6. breakÓï¾ä\n");
-	colum_n(24);  printf("7. continueÓï¾ä\n");
+	local(2, 20);  printf("Cåˆ†æç»“æ„ç¼–ç¨‹\n");
+	local(1, 24);  printf("1. ifè¯­å¥\n");
+	colum_n(24);  printf("2. if-elseè¯­å¥\n");
+	colum_n(24);  printf("3. if-else ifè¯­å¥\n");
+	colum_n(24);  printf("4. switchè¯­å¥\n");
+	colum_n(24);  printf("5. gotoè¯­å¥\n");
+	colum_n(24);  printf("6. breakè¯­å¥\n");
+	colum_n(24);  printf("7. continueè¯­å¥\n");
 
-	local(2, 24);  printf("0. ·µ»Ø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 24);  printf("0. è¿”å›\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 #include "menu2_3.h"
-//2.3·ÖÖ§µÄ¶ş¼¶²Ëµ¥
+//2.3åˆ†æ”¯çš„äºŒçº§èœå•
 void menu2_3(void) {
 	char cho2_3;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		dispMenu2_3();
 		cho2_3 = getchar();     getchar();//??
 		if (cho2_3 == '0') break;
@@ -149,27 +149,27 @@ void menu2_3(void) {
 }
 	
 //=================
-//2.4·ÖÖ§µÄÒ»¼¶²Ëµ¥
+//2.4åˆ†æ”¯çš„ä¸€çº§èœå•
 void dispMenu2_4(void) {
-	local(2, 20);  printf("CÑ­»·½á¹¹±à³Ì\n");
-	local(1, 24);  printf("1. whileÓï¾ä\n");
-	colum_n(24);  printf("2. do-whileÓï¾ä\n");
-	colum_n(24);  printf("3. forÓï¾ä\n");
-	colum_n(24);  printf("4. breakÓï¾ä\n");
-	colum_n(24);  printf("5. continueÓï¾ä\n");
-	colum_n(24);  printf("6. gotoÓï¾ä\n");
-	colum_n(24);  printf("7. ÎŞÏŞÑ­»·\n");
-	colum_n(24);  printf("8. Ñ­»·Ç¶Ì×\n");;
+	local(2, 20);  printf("Cå¾ªç¯ç»“æ„ç¼–ç¨‹\n");
+	local(1, 24);  printf("1. whileè¯­å¥\n");
+	colum_n(24);  printf("2. do-whileè¯­å¥\n");
+	colum_n(24);  printf("3. forè¯­å¥\n");
+	colum_n(24);  printf("4. breakè¯­å¥\n");
+	colum_n(24);  printf("5. continueè¯­å¥\n");
+	colum_n(24);  printf("6. gotoè¯­å¥\n");
+	colum_n(24);  printf("7. æ— é™å¾ªç¯\n");
+	colum_n(24);  printf("8. å¾ªç¯åµŒå¥—\n");;
 
-	local(2, 24);  printf("0. ·µ»Ø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 24);  printf("0. è¿”å›\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 #include "menu2_4.h"
-//2.4·ÖÖ§µÄ¶ş¼¶²Ëµ¥
+//2.4åˆ†æ”¯çš„äºŒçº§èœå•
 void menu2_4(void) {
 	char cho2_4;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		dispMenu2_4();
 		cho2_4 = getchar();     getchar();//??
 		if (cho2_4 == '0') break;
@@ -189,25 +189,25 @@ void menu2_4(void) {
 	}
 }
 //=================
-//2.5·ÖÖ§µÄÒ»¼¶²Ëµ¥
+//2.5åˆ†æ”¯çš„ä¸€çº§èœå•
 void dispMenu2_5(void) {
-	local(2, 20);  printf("Cº¯Êı½á¹¹\n");
-	local(1, 24);  printf("1. º¯ÊıµÄ¶¨Òå\n");
-	colum_n(24);  printf("2. º¯ÊıµÄµ÷ÓÃ\n");
-	colum_n(24);  printf("3. º¯ÊıµÄ²ÎÊı´«µİ\n");
-	colum_n(24);  printf("4. º¯ÊıµÄ·µ»ØÖµ\n");
-	colum_n(24);  printf("5. º¯ÊıµÄµİ¹éµ÷ÓÃ\n");
-	colum_n(24);  printf("6. º¯ÊıµÄÇ¶Ì×µ÷ÓÃ\n");
-	colum_n(24);  printf("7. º¯ÊıµÄÉùÃ÷\n");
-	local(2, 24);  printf("0. ·µ»Ø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 20);  printf("Cå‡½æ•°ç»“æ„\n");
+	local(1, 24);  printf("1. å‡½æ•°çš„å®šä¹‰\n");
+	colum_n(24);  printf("2. å‡½æ•°çš„è°ƒç”¨\n");
+	colum_n(24);  printf("3. å‡½æ•°çš„å‚æ•°ä¼ é€’\n");
+	colum_n(24);  printf("4. å‡½æ•°çš„è¿”å›å€¼\n");
+	colum_n(24);  printf("5. å‡½æ•°çš„é€’å½’è°ƒç”¨\n");
+	colum_n(24);  printf("6. å‡½æ•°çš„åµŒå¥—è°ƒç”¨\n");
+	colum_n(24);  printf("7. å‡½æ•°çš„å£°æ˜\n");
+	local(2, 24);  printf("0. è¿”å›\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 #include "menu2_5.h"
-//2.5·ÖÖ§µÄ¶ş¼¶²Ëµ¥
+//2.5åˆ†æ”¯çš„äºŒçº§èœå•
 void menu2_5(void) {
 	char cho2_5;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		dispMenu2_5();
 		cho2_5 = getchar();     getchar();//??
 		if (cho2_5 == '0') break;
@@ -226,25 +226,25 @@ void menu2_5(void) {
 	}
 }
 //=================
-//2.6·ÖÖ§µÄÒ»¼¶²Ëµ¥
+//2.6åˆ†æ”¯çš„ä¸€çº§èœå•
 void dispMenu2_6(void) {
-	local(2, 20);  printf("CÊı×é½á¹¹\n");
-	local(1, 24);  printf("1. Êı×éµÄ¶¨Òå\n");
-	colum_n(24);  printf("2. Êı×éµÄ³õÊ¼»¯\n");
-	colum_n(24);  printf("3. Êı×éµÄÒıÓÃ\n");
-	colum_n(24);  printf("4. Êı×éµÄÊäÈëÊä³ö\n");
-	colum_n(24);  printf("5. Ò»Î¬Êı×é\n");
-	colum_n(24);  printf("6. ¶şÎ¬Êı×é\n");
-	colum_n(24);  printf("7. ×Ö·ûÊı×é\n");
-	local(2, 24);  printf("0. ·µ»Ø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 20);  printf("Cæ•°ç»„ç»“æ„\n");
+	local(1, 24);  printf("1. æ•°ç»„çš„å®šä¹‰\n");
+	colum_n(24);  printf("2. æ•°ç»„çš„åˆå§‹åŒ–\n");
+	colum_n(24);  printf("3. æ•°ç»„çš„å¼•ç”¨\n");
+	colum_n(24);  printf("4. æ•°ç»„çš„è¾“å…¥è¾“å‡º\n");
+	colum_n(24);  printf("5. ä¸€ç»´æ•°ç»„\n");
+	colum_n(24);  printf("6. äºŒç»´æ•°ç»„\n");
+	colum_n(24);  printf("7. å­—ç¬¦æ•°ç»„\n");
+	local(2, 24);  printf("0. è¿”å›\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 #include "menu2_6.h"
-//2.6·ÖÖ§µÄ¶ş¼¶²Ëµ¥
+//2.6åˆ†æ”¯çš„äºŒçº§èœå•
 void menu2_6(void) {
 	char cho2_6;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		dispMenu2_6();
 		cho2_6 = getchar();     getchar();//??
 		if (cho2_6 == '0') break;
@@ -263,25 +263,25 @@ void menu2_6(void) {
 	}
 }
 //=================
-//2.7·ÖÖ§µÄÒ»¼¶²Ëµ¥
+//2.7åˆ†æ”¯çš„ä¸€çº§èœå•
 void dispMenu2_7(void) {
-	local(2, 20);  printf("CÖ¸Õë½á¹¹\n");
-	local(1, 24);  printf("1. Ö¸ÕëµÄ¶¨Òå\n");
-	colum_n(24);  printf("2. Ö¸ÕëµÄÊ¹ÓÃ\n");
-	colum_n(24);  printf("3. Ö¸ÕëµÄÊäÈëÊä³ö\n");
-	colum_n(24);  printf("4. Ö¸ÕëÓëÊı×é\n");
-	colum_n(24);  printf("5. Ö¸ÕëÓëº¯Êı\n");
-	colum_n(24);  printf("6. Ö¸ÕëÓëÖ¸Õë\n");
-	colum_n(24);  printf("7. mainº¯ÊıµÄ²ÎÊı\n");
-	local(2, 24);  printf("0. ·µ»Ø\n");
-	local(2, 20);  printf("ÇëÑ¡Ôñ£º");
+	local(2, 20);  printf("CæŒ‡é’ˆç»“æ„\n");
+	local(1, 24);  printf("1. æŒ‡é’ˆçš„å®šä¹‰\n");
+	colum_n(24);  printf("2. æŒ‡é’ˆçš„ä½¿ç”¨\n");
+	colum_n(24);  printf("3. æŒ‡é’ˆçš„è¾“å…¥è¾“å‡º\n");
+	colum_n(24);  printf("4. æŒ‡é’ˆä¸æ•°ç»„\n");
+	colum_n(24);  printf("5. æŒ‡é’ˆä¸å‡½æ•°\n");
+	colum_n(24);  printf("6. æŒ‡é’ˆä¸æŒ‡é’ˆ\n");
+	colum_n(24);  printf("7. mainå‡½æ•°çš„å‚æ•°\n");
+	local(2, 24);  printf("0. è¿”å›\n");
+	local(2, 20);  printf("è¯·é€‰æ‹©ï¼š");
 }
 #include "menu2_7.h"
-//2.7·ÖÖ§µÄ¶ş¼¶²Ëµ¥
+//2.7åˆ†æ”¯çš„äºŒçº§èœå•
 void menu2_7(void) {
 	char cho2_7;
 	while (1) {
-		system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
+		system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
 		dispMenu2_7();
 		cho2_7 = getchar();     getchar();//??
 		if (cho2_7 == '0') break;

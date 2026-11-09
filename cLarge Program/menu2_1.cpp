@@ -1,21 +1,23 @@
-//menu2_1.cpp -- 2.1 CÓïÑÔ»ù´¡ÖªÊ¶
+ï»¿//menu2_1.cpp -- 2.1 Cè¯­è¨€åŸºç¡€çŸ¥è¯†
 #include <stdio.h>
 #include <iostream>
-void m2_1_1(void) {    //1. Êı¾İ·ÖÀà
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    CÊı¾İ·ÖÀà \n\n  ");
-	printf("·ÖÎª ÕûĞÎ int ,ÊµĞÍ float£¬×Ö·ûĞÍ char\n");
-	printf("\t  intÓÖ·ÖÎª short¡¢int¡¢long \n");
-	printf(" Ã¿ÖÖÕûĞÎÓÖ·ÖÎª signedºÍunsigned \n");
-	printf("¹ÊÕûĞÎÏ¸·ÖÓĞÁùÖÖ\n");
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+#include <limits.h>    // SCHAR_MIN, INT_MAX è¿™äº›åœ¨ limits.h
+#include <float.h>     // FLT_MIN, DBL_MAX è¿™äº›åœ¨ float.h
+void m2_1_1(void) {    //1. æ•°æ®åˆ†ç±»
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    Cæ•°æ®åˆ†ç±» \n\n  ");
+	printf("åˆ†ä¸º æ•´å½¢ int ,å®å‹ floatï¼Œå­—ç¬¦å‹ char\n");
+	printf("\t  intåˆåˆ†ä¸º shortã€intã€long \n");
+	printf(" æ¯ç§æ•´å½¢åˆåˆ†ä¸º signedå’Œunsigned \n");
+	printf("æ•…æ•´å½¢ç»†åˆ†æœ‰å…­ç§\n");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
     getchar();
 	rewind(stdin);
 }
-void m2_1_2(void) {    //2. È¡Öµ·¶Î§
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    CÈ¡Öµ·¶Î§ \n\n  ");
-	printf("ÕûĞÎÈ¡Öµ·¶Î§£º\n");
+void m2_1_2(void) {    //2. å–å€¼èŒƒå›´
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    Cå–å€¼èŒƒå›´ \n\n  ");
+	printf("æ•´å½¢å–å€¼èŒƒå›´ï¼š\n");
 	printf("signed char: %d ~ %d\n", SCHAR_MIN, SCHAR_MAX);
 	printf("unsigned char: %d ~ %d\n", 0, UCHAR_MAX);
 	printf("signed short: %d ~ %d\n", SHRT_MIN, SHRT_MAX);
@@ -27,14 +29,14 @@ void m2_1_2(void) {    //2. È¡Öµ·¶Î§
 	printf("float: %e ~ %e\n", FLT_MIN, FLT_MAX);
 	printf("double: %e ~ %e\n", DBL_MIN, DBL_MAX);
 	printf("long double: %Le ~ %Le\n", LDBL_MIN, LDBL_MAX);
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 } 
-void m2_1_3(void) {    //3. ´æ´¢×Ö½Ú
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    C´æ´¢×Ö½Ú \n\n  ");
-	printf("ÕûĞÎ´æ´¢×Ö½Ú£º\n");
+void m2_1_3(void) {    //3. å­˜å‚¨å­—èŠ‚
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    Cå­˜å‚¨å­—èŠ‚ \n\n  ");
+	printf("æ•´å½¢å­˜å‚¨å­—èŠ‚ï¼š\n");
 	printf("signed char: %d\n", sizeof(signed char));
 	printf("unsigned char: %d\n", sizeof(unsigned char));
 	printf("signed short: %d\n", sizeof(signed short));
@@ -46,123 +48,123 @@ void m2_1_3(void) {    //3. ´æ´¢×Ö½Ú
 	printf("float: %d\n", sizeof(float));
 	printf("double: %d\n", sizeof(double));
 	printf("long double: %d\n", sizeof(long double));
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 }
-void m2_1_4(void){      //4.ËãÊıËã·û
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    CËãÊıËã·û \n\n  ");
-	printf("ËãÊıËã·û£º\n");
-	printf("¼Ó·¨£º+\n");
-	printf("¼õ·¨£º-\n");
-	printf("³Ë·¨£º*\n");
-	printf("³ı·¨£º/\n");
-	printf("ÇóÓà£º%%\n");
-	printf("×Ô¼Ó£º++\n");
-	printf("×Ô¼õ£º--\n");
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+void m2_1_4(void){      //4.ç®—æ•°ç®—ç¬¦
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    Cç®—æ•°ç®—ç¬¦ \n\n  ");
+	printf("ç®—æ•°ç®—ç¬¦ï¼š\n");
+	printf("åŠ æ³•ï¼š+\n");
+	printf("å‡æ³•ï¼š-\n");
+	printf("ä¹˜æ³•ï¼š*\n");
+	printf("é™¤æ³•ï¼š/\n");
+	printf("æ±‚ä½™ï¼š%%\n");
+	printf("è‡ªåŠ ï¼š++\n");
+	printf("è‡ªå‡ï¼š--\n");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 }
-void m2_1_5(void){      //5.ÀàĞÍ×ª»»
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    CÀàĞÍ×ª»» \n\n  ");
-	printf("ÀàĞÍ×ª»»£º\n");
-	printf("Ç¿ÖÆÀàĞÍ×ª»»£º(ÀàĞÍÃû)±í´ïÊ½\n");
-	printf("×Ô¶¯ÀàĞÍ×ª»»£º\n");
-	printf("1.µ±Á½¸ö²Ù×÷ÊıÖĞÓĞÒ»¸öÎªdoubleĞÍÊ±£¬ÁíÒ»¸ö²Ù×÷Êı×ª»»ÎªdoubleĞÍ\n");
-	printf("2.µ±Á½¸ö²Ù×÷ÊıÖĞÓĞÒ»¸öÎªfloatĞÍÊ±£¬ÁíÒ»¸ö²Ù×÷Êı×ª»»ÎªfloatĞÍ\n");
-	printf("3.µ±Á½¸ö²Ù×÷ÊıÖĞÓĞÒ»¸öÎªlongĞÍÊ±£¬ÁíÒ»¸ö²Ù×÷Êı×ª»»ÎªlongĞÍ\n");
-	printf("4.µ±Á½¸ö²Ù×÷ÊıÖĞÓĞÒ»¸öÎªunsigned intĞÍÊ±£¬ÁíÒ»¸ö²Ù×÷Êı×ª»»Îªunsigned intĞÍ\n");
-	printf("5.µ±Á½¸ö²Ù×÷ÊıÖĞÓĞÒ»¸öÎªintĞÍÊ±£¬ÁíÒ»¸ö²Ù×÷Êı×ª»»ÎªintĞÍ\n");
-	printf("6.µ±Á½¸ö²Ù×÷ÊıÖĞÓĞÒ»¸öÎªshortĞÍÊ±£¬ÁíÒ»¸ö²Ù×÷Êı×ª»»ÎªshortĞÍ\n");
-	printf("7.µ±Á½¸ö²Ù×÷ÊıÖĞÓĞÒ»¸öÎªcharĞÍÊ±£¬ÁíÒ»¸ö²Ù×÷Êı×ª»»ÎªcharĞÍ\n");
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+void m2_1_5(void){      //5.ç±»å‹è½¬æ¢
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    Cç±»å‹è½¬æ¢ \n\n  ");
+	printf("ç±»å‹è½¬æ¢ï¼š\n");
+	printf("å¼ºåˆ¶ç±»å‹è½¬æ¢ï¼š(ç±»å‹å)è¡¨è¾¾å¼\n");
+	printf("è‡ªåŠ¨ç±»å‹è½¬æ¢ï¼š\n");
+	printf("1.å½“ä¸¤ä¸ªæ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªä¸ºdoubleå‹æ—¶ï¼Œå¦ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºdoubleå‹\n");
+	printf("2.å½“ä¸¤ä¸ªæ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªä¸ºfloatå‹æ—¶ï¼Œå¦ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºfloatå‹\n");
+	printf("3.å½“ä¸¤ä¸ªæ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªä¸ºlongå‹æ—¶ï¼Œå¦ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºlongå‹\n");
+	printf("4.å½“ä¸¤ä¸ªæ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªä¸ºunsigned intå‹æ—¶ï¼Œå¦ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºunsigned intå‹\n");
+	printf("5.å½“ä¸¤ä¸ªæ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªä¸ºintå‹æ—¶ï¼Œå¦ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºintå‹\n");
+	printf("6.å½“ä¸¤ä¸ªæ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªä¸ºshortå‹æ—¶ï¼Œå¦ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºshortå‹\n");
+	printf("7.å½“ä¸¤ä¸ªæ“ä½œæ•°ä¸­æœ‰ä¸€ä¸ªä¸ºcharå‹æ—¶ï¼Œå¦ä¸€ä¸ªæ“ä½œæ•°è½¬æ¢ä¸ºcharå‹\n");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 }
-void m2_1_6(void) {     //6. I/OÀàĞÍ¿ØÖÆ
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    C I/OÀàĞÍ¿ØÖÆ \n\n  ");
-	printf("I/OÀàĞÍ¿ØÖÆ£º\n"); 
-	//¸ñÊ½»¯ÊäÈë/Êä³öº¯Êı
-	printf("¸ñÊ½»¯ÊäÈë/Êä³öº¯Êı£º\n");
-	printf("printf(\"¸ñÊ½¿ØÖÆ×Ö·û´®\",Êä³öÏîÁĞ±í)\n");
-	printf("scanf(\"¸ñÊ½¿ØÖÆ×Ö·û´®\",&ÊäÈëÏîÁĞ±í)\n");
-	//±ê×¼»¯ÊäÈë/Êä³öº¯Êı
-	printf("±ê×¼»¯ÊäÈë/Êä³öº¯Êı£º\n");
-	printf("getchar()  //´Ó¼üÅÌÊäÈëÒ»¸ö×Ö·û\n");
-	printf("putchar()  //ÏòÏÔÊ¾Æ÷Êä³öÒ»¸ö×Ö·û\n");
-	printf("gets()     //´Ó¼üÅÌÊäÈëÒ»¸ö×Ö·û´®\n");
-	printf("puts()     //ÏòÏÔÊ¾Æ÷Êä³öÒ»¸ö×Ö·û´®\n");
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+void m2_1_6(void) {     //6. I/Oç±»å‹æ§åˆ¶
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    C I/Oç±»å‹æ§åˆ¶ \n\n  ");
+	printf("I/Oç±»å‹æ§åˆ¶ï¼š\n"); 
+	//æ ¼å¼åŒ–è¾“å…¥/è¾“å‡ºå‡½æ•°
+	printf("æ ¼å¼åŒ–è¾“å…¥/è¾“å‡ºå‡½æ•°ï¼š\n");
+	printf("printf(\"æ ¼å¼æ§åˆ¶å­—ç¬¦ä¸²\",è¾“å‡ºé¡¹åˆ—è¡¨)\n");
+	printf("scanf(\"æ ¼å¼æ§åˆ¶å­—ç¬¦ä¸²\",&è¾“å…¥é¡¹åˆ—è¡¨)\n");
+	//æ ‡å‡†åŒ–è¾“å…¥/è¾“å‡ºå‡½æ•°
+	printf("æ ‡å‡†åŒ–è¾“å…¥/è¾“å‡ºå‡½æ•°ï¼š\n");
+	printf("getchar()  //ä»é”®ç›˜è¾“å…¥ä¸€ä¸ªå­—ç¬¦\n");
+	printf("putchar()  //å‘æ˜¾ç¤ºå™¨è¾“å‡ºä¸€ä¸ªå­—ç¬¦\n");
+	printf("gets()     //ä»é”®ç›˜è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²\n");
+	printf("puts()     //å‘æ˜¾ç¤ºå™¨è¾“å‡ºä¸€ä¸ªå­—ç¬¦ä¸²\n");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 }
-void m2_1_7(void) {  //7.printfº¯Êı
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    C printfº¯Êı \n\n  ");
-	printf("printfº¯Êı£º\n");
-	printf("printf(\"%%d\",a);  //Êä³öÊ®½øÖÆÕûÊı\n");
-	printf("printf(\"%%o\",a);  //Êä³ö°Ë½øÖÆÕûÊı\n");
-	printf("printf(\"%%x\",a);  //Êä³öÊ®Áù½øÖÆÕûÊı\n");
-	printf("printf(\"%%f\",a);  //Êä³ö¸¡µãÊı\n");
-	printf("printf(\"%%e\",a);  //Êä³ö¿ÆÑ§¼ÆÊı·¨\n");
-	printf("printf(\"%%c\",a);  //Êä³ö×Ö·û\n");
-	printf("printf(\"%%s\",a);  //Êä³ö×Ö·û´®\n");
-	printf("printf(\"%%p\",a);  //Êä³öÖ¸Õë\n");
-	printf("printf(\"%%u\",a);  //Êä³öÎŞ·ûºÅÊ®½øÖÆÕûÊı\n");
-	printf("printf(\"%%g\",a);  //Êä³ö¸¡µãÊı%%e»ò%%f\n");
-	printf("printf(\"%%i\",a);  //Êä³öÊ®½øÖÆ¡¢°Ë½øÖÆ¡¢Ê®Áù½øÖÆÕûÊı\n");
-	printf("printf(\"%%hd\",a);  //Êä³ö¶ÌÕûÊı\n");
-	printf("printf(\"%%ld\",a);  //Êä³ö³¤ÕûÊı\n");
-	printf("printf(\"%%lu\",a);  //Êä³öÎŞ·ûºÅ³¤ÕûÊı\n");
-	printf("printf(\"%%le\",a);  //Êä³ö³¤¸¡µãÊı\n");
-	printf("printf(\"%%lf\",a);  //Êä³öË«¾«¶È¸¡µãÊı\n");
-	printf("printf(\"%%c\",a);  //Êä³ö×Ö·û\n");
-	printf("printf(\"%%s\",a);  //Êä³ö×Ö·û´®\n");
-	printf("printf(\"%%p\",a);  //Êä³öÖ¸Õë\n");
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+void m2_1_7(void) {  //7.printfå‡½æ•°
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    C printfå‡½æ•° \n\n  ");
+	printf("printfå‡½æ•°ï¼š\n");
+	printf("printf(\"%%d\",a);  //è¾“å‡ºåè¿›åˆ¶æ•´æ•°\n");
+	printf("printf(\"%%o\",a);  //è¾“å‡ºå…«è¿›åˆ¶æ•´æ•°\n");
+	printf("printf(\"%%x\",a);  //è¾“å‡ºåå…­è¿›åˆ¶æ•´æ•°\n");
+	printf("printf(\"%%f\",a);  //è¾“å‡ºæµ®ç‚¹æ•°\n");
+	printf("printf(\"%%e\",a);  //è¾“å‡ºç§‘å­¦è®¡æ•°æ³•\n");
+	printf("printf(\"%%c\",a);  //è¾“å‡ºå­—ç¬¦\n");
+	printf("printf(\"%%s\",a);  //è¾“å‡ºå­—ç¬¦ä¸²\n");
+	printf("printf(\"%%p\",a);  //è¾“å‡ºæŒ‡é’ˆ\n");
+	printf("printf(\"%%u\",a);  //è¾“å‡ºæ— ç¬¦å·åè¿›åˆ¶æ•´æ•°\n");
+	printf("printf(\"%%g\",a);  //è¾“å‡ºæµ®ç‚¹æ•°%%eæˆ–%%f\n");
+	printf("printf(\"%%i\",a);  //è¾“å‡ºåè¿›åˆ¶ã€å…«è¿›åˆ¶ã€åå…­è¿›åˆ¶æ•´æ•°\n");
+	printf("printf(\"%%hd\",a);  //è¾“å‡ºçŸ­æ•´æ•°\n");
+	printf("printf(\"%%ld\",a);  //è¾“å‡ºé•¿æ•´æ•°\n");
+	printf("printf(\"%%lu\",a);  //è¾“å‡ºæ— ç¬¦å·é•¿æ•´æ•°\n");
+	printf("printf(\"%%le\",a);  //è¾“å‡ºé•¿æµ®ç‚¹æ•°\n");
+	printf("printf(\"%%lf\",a);  //è¾“å‡ºåŒç²¾åº¦æµ®ç‚¹æ•°\n");
+	printf("printf(\"%%c\",a);  //è¾“å‡ºå­—ç¬¦\n");
+	printf("printf(\"%%s\",a);  //è¾“å‡ºå­—ç¬¦ä¸²\n");
+	printf("printf(\"%%p\",a);  //è¾“å‡ºæŒ‡é’ˆ\n");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 }
-void m2_1_8(void) {  //8.scanf()º¯Êı
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    C scanfº¯Êı \n\n  ");
-	printf("scanfº¯Êı£º\n");
-	printf("scanf(\"%%d\",&a);  //ÊäÈëÊ®½øÖÆÕûÊı\n");
-	printf("scanf(\"%%o\",&a);  //ÊäÈë°Ë½øÖÆÕûÊı\n");
-	printf("scanf(\"%%x\",&a);  //ÊäÈëÊ®Áù½øÖÆÕûÊı\n");
-	printf("scanf(\"%%f\",&a);  //ÊäÈë¸¡µãÊı\n");
-	printf("scanf(\"%%e\",&a);  //ÊäÈë¿ÆÑ§¼ÆÊı·¨\n");
-	printf("scanf(\"%%c\",&a);  //ÊäÈë×Ö·û\n");
-	printf("scanf(\"%%s\",&a);  //ÊäÈë×Ö·û´®\n");
-	printf("scanf(\"%%p\",&a);  //ÊäÈëÖ¸Õë\n");
-	printf("scanf(\"%%u\",&a);  //ÊäÈëÎŞ·ûºÅÊ®½øÖÆÕûÊı\n");
-	printf("scanf(\"%%g\",&a);  //ÊäÈë¸¡µãÊı%%e»ò%%f\n");
-	printf("scanf(\"%%i\",&a);  //ÊäÈëÊ®½øÖÆ¡¢°Ë½øÖÆ¡¢Ê®Áù½øÖÆÕûÊı\n");
-	printf("scanf(\"%%hd\",&a);  //ÊäÈë¶ÌÕûÊı\n");
-	printf("scanf(\"%%ld\",&a);  //ÊäÈë³¤ÕûÊı\n");
-	printf("scanf(\"%%lu\",&a);  //ÊäÈëÎŞ·ûºÅ³¤ÕûÊı\n");
-	printf("scanf(\"%%le\",&a);  //ÊäÈë³¤¸¡µãÊı\n");
-	printf("scanf(\"%%lf\",&a);  //ÊäÈëË«¾«¶È¸¡µãÊı\n");
-	printf("scanf(\"%%c\",&a);  //ÊäÈë×Ö·û\n");
-	printf("scanf(\"%%s\",&a);  //ÊäÈë×Ö·û´®\n");
-	printf("scanf(\"%%p\",&a);  //ÊäÈëÖ¸Õë\n");
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+void m2_1_8(void) {  //8.scanf()å‡½æ•°
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    C scanfå‡½æ•° \n\n  ");
+	printf("scanfå‡½æ•°ï¼š\n");
+	printf("scanf(\"%%d\",&a);  //è¾“å…¥åè¿›åˆ¶æ•´æ•°\n");
+	printf("scanf(\"%%o\",&a);  //è¾“å…¥å…«è¿›åˆ¶æ•´æ•°\n");
+	printf("scanf(\"%%x\",&a);  //è¾“å…¥åå…­è¿›åˆ¶æ•´æ•°\n");
+	printf("scanf(\"%%f\",&a);  //è¾“å…¥æµ®ç‚¹æ•°\n");
+	printf("scanf(\"%%e\",&a);  //è¾“å…¥ç§‘å­¦è®¡æ•°æ³•\n");
+	printf("scanf(\"%%c\",&a);  //è¾“å…¥å­—ç¬¦\n");
+	printf("scanf(\"%%s\",&a);  //è¾“å…¥å­—ç¬¦ä¸²\n");
+	printf("scanf(\"%%p\",&a);  //è¾“å…¥æŒ‡é’ˆ\n");
+	printf("scanf(\"%%u\",&a);  //è¾“å…¥æ— ç¬¦å·åè¿›åˆ¶æ•´æ•°\n");
+	printf("scanf(\"%%g\",&a);  //è¾“å…¥æµ®ç‚¹æ•°%%eæˆ–%%f\n");
+	printf("scanf(\"%%i\",&a);  //è¾“å…¥åè¿›åˆ¶ã€å…«è¿›åˆ¶ã€åå…­è¿›åˆ¶æ•´æ•°\n");
+	printf("scanf(\"%%hd\",&a);  //è¾“å…¥çŸ­æ•´æ•°\n");
+	printf("scanf(\"%%ld\",&a);  //è¾“å…¥é•¿æ•´æ•°\n");
+	printf("scanf(\"%%lu\",&a);  //è¾“å…¥æ— ç¬¦å·é•¿æ•´æ•°\n");
+	printf("scanf(\"%%le\",&a);  //è¾“å…¥é•¿æµ®ç‚¹æ•°\n");
+	printf("scanf(\"%%lf\",&a);  //è¾“å…¥åŒç²¾åº¦æµ®ç‚¹æ•°\n");
+	printf("scanf(\"%%c\",&a);  //è¾“å…¥å­—ç¬¦\n");
+	printf("scanf(\"%%s\",&a);  //è¾“å…¥å­—ç¬¦ä¸²\n");
+	printf("scanf(\"%%p\",&a);  //è¾“å…¥æŒ‡é’ˆ\n");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 }
-void m2_1_9(void) {   //9.×Ö·ûI/O
-	system("cls");     //µ÷ÓÃÏµÍ³ÃüÁî£¬ÇåÆÁ
-	printf("\n\n    C ×Ö·ûI/O \n\n  ");
-	printf("×Ö·ûI/O£º\n");
+void m2_1_9(void) {   //9.å­—ç¬¦I/O
+	system("cls");     //è°ƒç”¨ç³»ç»Ÿå‘½ä»¤ï¼Œæ¸…å±
+	printf("\n\n    C å­—ç¬¦I/O \n\n  ");
+	printf("å­—ç¬¦I/Oï¼š\n");
 	printf("getchar();\n");
 	printf("putchar();\n");
 	printf("gets();\n");
 	printf("puts();\n");
-	printf("\n°´»Ø³µ¼ü·µ»Ø...");
+	printf("\næŒ‰å›è½¦é”®è¿”å›...");
 	getchar();
 	rewind(stdin);
 }
